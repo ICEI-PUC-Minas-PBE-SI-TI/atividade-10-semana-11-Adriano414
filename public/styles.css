@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8b0000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* Lista de jogos */
+#lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Cards */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 0 10px 10px;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    background-color: #8b0000;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #b30000;
+}
+
+/* Página de detalhes */
+#detalhes {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#detalhes img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+#detalhes h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#detalhes p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Botão voltar */
+main a {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #8b0000;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+main a:hover {
+    background-color: #b30000;
+}
+
+.card.detalhes {
+    margin-top:auto;
+}
